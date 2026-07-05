@@ -8,9 +8,8 @@ export default function handler(req, res) {
     // Frontend se aaya password
     const userPassword = req.body.password;
 
-    // Vercel Environment Variables se original data nikalna
-    const correctPassword = process.env.GATEWAY_PASSWORD;
-    const driveLink = process.env.DRIVE_LINK;
+    const correctPassword = process.env.paradox_password;
+    const driveLink = process.env.folder_link;
 
     // Password Match Logic
     if (userPassword === correctPassword) {
